@@ -1,13 +1,7 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const toggleDark = document.getElementById("toggleDark");
+const body = document.body;
+const toggle = document.getElementById("modeToggle");
 
-    toggleDark.addEventListener("click", function () {
-        document.body.classList.toggle("dark");
-
-        if (document.body.classList.contains("dark")) {
-            toggleDark.textContent = "☀️";
-        } else {
-            toggleDark.textContent = "🌙";
-        }
-    });
+toggle.addEventListener("click", () => {
+  body.classList.toggle("light");
+  body.classList.toggle("dark");
 });

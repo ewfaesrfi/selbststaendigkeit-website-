@@ -1,12 +1,13 @@
-// Dark Mode
-const toggle = document.getElementById("darkToggle");
-toggle.addEventListener("click", () => {
-    document.body.classList.toggle("dark");
-});
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleDark = document.getElementById("toggleDark");
 
-// Accordion
-document.querySelectorAll(".acc-btn").forEach(btn => {
-    btn.addEventListener("click", () => {
-        btn.parentElement.classList.toggle("active");
+    toggleDark.addEventListener("click", function () {
+        document.body.classList.toggle("dark");
+
+        if (document.body.classList.contains("dark")) {
+            toggleDark.textContent = "☀️";
+        } else {
+            toggleDark.textContent = "🌙";
+        }
     });
 });

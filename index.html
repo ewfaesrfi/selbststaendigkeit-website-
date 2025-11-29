@@ -1,81 +1,351 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Der Weg in die Selbstständigkeit – Marc Meinel</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Weg in die Selbstständigkeit — Komplettleitfaden</title>
+  <meta name="description" content="Ausführlicher Leitfaden: Formalitäten, Sozialversicherung, Steuern, Businessplan, Rechtsformen & Förderung. Includes calculators & downloadable checklists.">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+  <header class="site-header" role="banner">
+    <div class="wrap header-grid">
+      <!-- Inline SVG Logo (scalable) -->
+      <a class="logo-link" href="/" aria-label="Weg in die Selbstständigkeit">
+        <svg class="logo" viewBox="0 0 200 60" role="img" aria-hidden="false">
+          <defs>
+            <linearGradient id="g1" x1="0" x2="1">
+              <stop offset="0" stop-color="#2ea6ff"/>
+              <stop offset="1" stop-color="#2dd4bf"/>
+            </linearGradient>
+          </defs>
+          <!-- arrow/chart -->
+          <g transform="translate(6,4)">
+            <rect x="0" y="20" width="80" height="26" rx="3" fill="rgba(255,255,255,0.03)"/>
+            <path d="M6 40 L26 18 L38 30 L58 6 L74 6" stroke="url(#g1)" stroke-width="8" stroke-linejoin="round" stroke-linecap="round" fill="none"/>
+            <circle cx="38" cy="30" r="4.5" fill="#fff" />
+            <polygon points="74,6 86,0 80,14" fill="url(#g1)"/>
+          </g>
+          <!-- text -->
+          <g transform="translate(100,14)">
+            <text x="0" y="0" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial" font-weight="700" font-size="18" fill="currentColor">Weg in die</text>
+            <text x="0" y="22" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial" font-weight="700" font-size="18" fill="currentColor">Selbstständigkeit</text>
+          </g>
+        </svg>
+      </a>
 
-<header>
-<nav class="navbar">
-<div class="logo">Selbstständig Starten</div>
-<ul class="nav-links">
-<li><a class="active" href="index.html">Start</a></li>
-<li><a href="themen.html">Themen</a></li>
-<li><a href="leistungen.html">Leistungen</a></li>
-<li><a href="kontakt.php">Kontakt</a></li>
-</ul>
-<button id="toggleDark">🌙</button>
-</nav>
+      <nav class="top-nav" role="navigation" aria-label="Hauptnavigation">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="main-menu">☰</button>
+        <ul id="main-menu" class="nav-list">
+          <li><a href="#formal">Formalitäten</a></li>
+          <li><a href="#sozial">Sozialversicherung</a></li>
+          <li><a href="#steuern">Steuern</a></li>
+          <li><a href="#businessplan">Businessplan</a></li>
+          <li><a href="#rechtsformen">Rechtsformen</a></li>
+          <li><a href="#foerderung">Förderung</a></li>
+        </ul>
+      </nav>
 
-<div class="hero">
-<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwMCIgaGVpZ2h0PSI2MDAiIHZpZXdCb3g9IjAgMCAxNjAwIDYwMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSI2MDAiIGZpbGw9IiNGRkZGRkYiLz48Y2lyY2xlIGN4PSIzMDAiIGN5PSIyMDAiIHI9IjE1MCIgZmlsbD0iI0ZGRjAwMCIgZmlsbC1vcGFjaXR5PSIwLjMiLz48Y2lyY2xlIGN4PSI3NTAiIGN5PSIzMDAiIHI9IjIwMCIgZmlsbD0iI0UwRkZGRiIgZmlsbC1vcGFjaXR5PSIwLjMiLz48cGF0aCBkPSJNNDgwIDQwMEw2MzAgMjIwTDc4MCA0MDBaIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iNTAiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iMC40Ii8+PHRleHQgeD0iODAwIiB5PSIyNTAiIGZvbnQtc2l6ZT0iNzAiIGZpbGw9IiMzMzMiIGZvbnQtd2VpZ2h0PSJib2xkIj5TdGFydCB5b3VyIGJ1c2luZXNzPC90ZXh0Pjwvc3ZnPg==" alt="Hero Bild">
-<div class="hero-text">
-<h1>Ihr Weg in die erfolgreiche Selbstständigkeit</h1>
-<p>Mit Marc Meinel – Coaching, Strategie & klare Struktur für Ihren Start</p>
-<a href="kontakt.php" class="btn-primary">Jetzt Kontakt aufbauen</a>
-</div>
-</div>
-</header>
+      <div class="header-actions">
+        <button id="modeToggle" class="btn icon-btn" aria-pressed="false" title="Theme umschalten">🌙</button>
+        <a href="#kontakt" class="btn primary">Beratung anfragen</a>
+      </div>
+    </div>
+  </header>
 
-<section class="intro">
-<h2>Willkommen bei Ihrem Start in die Selbstständigkeit</h2>
-<p>
-Ich unterstütze Sie dabei, Ihren Traum von der Selbstständigkeit zu verwirklichen,
-indem ich Ihnen die Werkzeuge und Strategien an die Hand gebe,
-die Sie für einen erfolgreichen Start brauchen.
-</p>
-</section>
+  <main id="main" class="wrap">
+    <!-- HERO -->
+    <section class="hero card" id="hero">
+      <div class="hero-left">
+        <h1>Dein Weg in die Selbstständigkeit — sicher, geplant, vorbereitet</h1>
+        <p class="lead">Konkrete Checklisten, rechtliche Hinweise, Steuertipps und ein Start-Kit mit Rechnern — alles auf Deutsch, praxisorientiert und aktuell.</p>
+        <div class="hero-ctas">
+          <a href="#businessplan" class="btn primary large">Businessplan starten</a>
+          <a href="#formal" class="btn ghost">Checkliste Formalitäten</a>
+        </div>
 
-<section class="icons-grid">
-<div class="icon-box">
-<img src="data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDA2NkZGIiB3aWR0aD0iNzAiIGhlaWdodD0iNzAiPjxjaXJjbGUgY3g9IjM1IiBjeT0iMzUiIHI9IjM1Ii8+PC9zdmc+" alt="Geschäftsidee">
-<h3>Geschäftsidee finden</h3>
-<p>Gemeinsam entwickeln wir Ihre Geschäftsidee und prüfen die Marktchancen.</p>
-</div>
+        <div class="quick-grid" aria-hidden="false">
+          <div class="quick">
+            <strong>Gewerbe?</strong>
+            <p>Gewerbeanmeldung vs. Freiberufler — sofort prüfen.</p>
+          </div>
+          <div class="quick">
+            <strong>Steuern</strong>
+            <p>Umsatzsteuer, EÜR, Steuer-Rücklagen einfach berechnen.</p>
+          </div>
+          <div class="quick">
+            <strong>Förderung</strong>
+            <p>KfW, Gründerzuschuss, regionale Programme — Übersicht.</p>
+          </div>
+        </div>
+      </div>
 
-<div class="icon-box">
-<img src="data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDA2NkZGIiB3aWR0aD0iNzAiIGhlaWdodD0iNzAiPjxwYXRoIGQ9Ik0zNSAwQzU0LjY4IDAgNzAgMTUuMzIgNzAgMzVDMzUgNzAgMC41IDU0LjY4IDAgMzVDMCAxNS4zMiAxNS4zMiAwIDM1IDBaIi8+PC9zdmc+" alt="Recht">
-<h3>Rechtliche Grundlagen</h3>
-<p>Verstehen Sie die wichtigsten rechtlichen Schritte und Pflichten.</p>
-</div>
+      <figure class="hero-media" aria-hidden="true">
+        <!-- hero gallery: replace links with your assets/hero-*.jpg -->
+        <picture>
+          <source srcset="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&q=80&auto=format&fit=crop" media="(min-width:800px)">
+          <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=900&q=60&auto=format&fit=crop" alt="Arbeitsplatz und Laptop - Start in die Selbstständigkeit">
+        </picture>
+      </figure>
+    </section>
 
-<div class="icon-box">
-<img src="data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDA2NkZGIiB3aWR0aD0iNzAiIGhlaWdodD0iNzAiPjxwYXRoIGQ9Ik0zNSAwQzU0LjY4IDAgNzAgMTUuMzIgNzAgMzVDMzUgNzAgMC41IDU0LjY4IDAgMzVDMCAxNS4zMiAxNS4zMiAwIDM1IDBaIi8+PC9zdmc+" alt="Steuern">
-<h3>Steuern verstehen</h3>
-<p>Umsatzsteuer, Einkommensteuer, Gewerbesteuer – einfach erklärt.</p>
-</div>
+    <!-- TWO-COLUMN SUMMARY -->
+    <section class="card summary" aria-labelledby="summary-title">
+      <h2 id="summary-title">Schnellübersicht & Prioritäten</h2>
+      <div class="summary-grid">
+        <article>
+          <h3>Vor dem Start</h3>
+          <ul>
+            <li>Geschäftsidee konkretisieren & USP definieren</li>
+            <li>Domain, Rechtliches (Marke/Name) prüfen</li>
+            <li>Finanzierungsplan & Liquiditätspuffer (3–6 Monate)</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Innerhalb der ersten 30 Tage</h3>
+          <ul>
+            <li>Gewerbeanmeldung / Fragebogen beim Finanzamt</li>
+            <li>Krankenversicherung klären, ggf. Rentenpflicht prüfen</li>
+            <li>Steuerberater oder Beratungsstelle kontaktieren</li>
+          </ul>
+        </article>
+      </div>
+    </section>
 
-<div class="icon-box">
-<img src="data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDA2NkZGIiB3aWR0aD0iNzAiIGhlaWdodD0iNzAiPjxjaXJjbGUgY3g9IjM1IiBjeT0iMzUiIHI9IjM1Ii8+PC9zdmc+" alt="Versicherungen">
-<h3>Sozialversicherungen</h3>
-<p>Krankenversicherung, BG, Rente: Was für Gründer wichtig ist.</p>
-</div>
-</section>
+    <!-- FORMAL -->
+    <section id="formal" class="card">
+      <header class="section-head">
+        <h2>Formaler Weg</h2>
+        <p class="muted">Behördengänge, Anmeldungen, typische Gebühren und ein Beispiel-Ablauf.</p>
+      </header>
 
-<section class="cta">
-<h2>Bereit für Ihren Start?</h2>
-<p>Ich begleite Sie Schritt für Schritt in die Selbstständigkeit.</p>
-<a href="kontakt.php" class="btn-primary">Jetzt Kontakt aufbauen</a>
-</section>
+      <div class="two-col">
+        <div>
+          <h3>Gewerbe vs. Freiberufler</h3>
+          <p>Freiberufler melden sich direkt beim Finanzamt (Fragebogen zur steuerlichen Erfassung). Gewerbetreibende melden beim Gewerbeamt an — automatische Weiterleitung an IHK/HWK, Finanzamt und Berufsgenossenschaft.</p>
 
-<footer>
-<p>© 2025 – Marc Meinel Coaching</p>
-</footer>
+          <h4>Konkreter Ablauf (Beispiel)</h4>
+          <ol>
+            <li>Geschäftsname & Domain prüfen, ggf. Handelsregisterabfrage</li>
+            <li>Gewerbeamt → Formular ausfüllen (Gebühr: 20–60 €)</li>
+            <li>Steuerfragebogen beim Finanzamt → Steuernummer (ggf. USt-ID beantragen)</li>
+            <li>Berufsgenossenschaft & IHK/HWK: prüfen & anmelden</li>
+            <li>Bankkonto öffnen, Versicherungen abschließen</li>
+          </ol>
+        </div>
 
-<script src="script.js"></script>
+        <aside>
+          <h4>Download: Checkliste Formalitäten</h4>
+          <p>Kurzcheck als PDF (Druckformat optimiert).</p>
+          <a class="btn ghost" href="#" onclick="alert('PDF-Download (simuliert)')">Checkliste herunterladen</a>
+
+          <h4>FAQ</h4>
+          <div class="accordion">
+            <button class="accordion-toggle">Brauche ich einen Steuerberater?</button>
+            <div class="accordion-panel">
+              <p>Für die Gründungsphase sehr empfehlenswert — insbesondere bei Bilanzierung, Rechtsformwahl oder Förderanträgen.</p>
+            </div>
+
+            <button class="accordion-toggle">Wie schnell bekomme ich die Steuernummer?</button>
+            <div class="accordion-panel">
+              <p>Meist innerhalb weniger Tage bis Wochen — bei hoher Arbeitslast des Finanzamts kann es länger dauern.</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SOCIAL -->
+    <section id="sozial" class="card">
+      <header class="section-head">
+        <h2>Sozialversicherung & Absicherung</h2>
+        <p class="muted">Pflichten, Optionen & empfohlene Policen.</p>
+      </header>
+
+      <div class="grid-2">
+        <div>
+          <h3>Krankenkasse</h3>
+          <p>Gesetzlich (freiwillig) oder privat — prüfe Beitragsbemessung, Mindestbemessung und ggf. freiwillige Weiterversicherung (nach ALG I).</p>
+
+          <h3>Rentenversicherung</h3>
+          <p>Für bestimmte Gruppen (z. B. Künstler via Künstlersozialkasse, selbstständige Lehrer) besteht Rentenversicherungspflicht. Andere können freiwillig einzahlen — als Sicherheit sinnvoll.</p>
+
+          <h3>Weitere Absicherungen</h3>
+          <ul>
+            <li>Berufshaftpflicht</li>
+            <li>Betriebshaftpflicht / Inventarversicherung</li>
+            <li>Rechtsschutz & Krankentagegeld</li>
+          </ul>
+        </div>
+
+        <div>
+          <figure class="card-media">
+            <img src="https://images.unsplash.com/photo-1543269664-44a6d3a1bc2b?w=800&q=60&auto=format&fit=crop" alt="Beratung" />
+            <figcaption class="muted">Beratung & Absicherung: frühzeitig planen.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAXES -->
+    <section id="steuern" class="card">
+      <header class="section-head">
+        <h2>Steuern</h2>
+        <p class="muted">Praktisch, mit Rechnern zur schnellen Kalkulation.</p>
+      </header>
+
+      <div class="grid-2">
+        <div>
+          <h3>Einkommensteuer & Gewinnermittlung</h3>
+          <p>Gewinn = Betriebseinnahmen − Betriebsausgaben. Für viele Einzelunternehmer eignet sich die EÜR (Einnahmen-Überschuss-Rechnung). Bei Kapitalgesellschaften ist Bilanzierung Pflicht.</p>
+
+          <h3>Umsatzsteuer</h3>
+          <p>Regelbesteuerung (19% / 7%) oder Kleinunternehmerregelung (Umsatzgrenzen: Vorjahr &gt;= &lt; 22.000 €; laufendes Jahr &lt; 50.000 € — Hinweis: Grenzen regelmäßig prüfen).</p>
+
+          <h3>Gewerbesteuer</h3>
+          <p>Freibetrag 24.500 € für Einzelunternehmer/Personengesellschaften; Hebesatz der Gemeinde entscheidend.</p>
+
+          <h4>Steuerrücklagen-Rechner</h4>
+          <label for="profitInput">Erwarteter Jahresgewinn (€)</label>
+          <input id="profitInput" type="number" placeholder="z. B. 30.000" />
+          <label for="reservePct">Rücklage (%)</label>
+          <input id="reservePct" type="number" value="35" />
+          <button class="btn" id="calcReserve">Berechnen</button>
+          <p id="reserveResult" class="muted">Trage einen Gewinn ein und klicke &quot;Berechnen&quot;.</p>
+        </div>
+
+        <div>
+          <figure class="card-media">
+            <img src="https://images.unsplash.com/photo-1559526324-593bc073d938?w=800&q=60&auto=format&fit=crop" alt="Steuern und Unterlagen" />
+            <figcaption class="muted">Dokumentation & Buchhaltung regelmäßig aktualisieren.</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <!-- EÜR Mini -->
+      <div class="euer card">
+        <h4>EÜR-Mini (Schnellübersicht)</h4>
+        <div class="euer-grid">
+          <label>Umsatz (Jahr)</label><input id="euerRevenue" type="number" placeholder="Umsatz" />
+          <label>Betriebsausgaben (Jahr)</label><input id="euerCosts" type="number" placeholder="Ausgaben" />
+          <button class="btn" id="calcEuer">Gewinn berechnen</button>
+          <div id="euerResult" class="muted">Gewinn wird hier angezeigt.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BUSINESSPLAN -->
+    <section id="businessplan" class="card">
+      <header class="section-head">
+        <h2>Businessplan — konkret</h2>
+        <p class="muted">Aufgebaut für Bank, Förderstelle oder als interne Roadmap (inkl. Beispielzahlen).</p>
+      </header>
+
+      <article>
+        <h3>Executive Summary (Template)</h3>
+        <p><em>1 Seite: </em> Kurze Beschreibung der Geschäftsidee, Zielgruppe (Alter, Einkommen, Region), USP, Umsatzannahmen und Kapitalbedarf.</p>
+
+        <h3>Finanzplanung — Beispiel</h3>
+        <table class="table">
+          <thead><tr><th>Position</th><th>Monat</th><th>Jahr</th></tr></thead>
+          <tbody>
+            <tr><td>Miete & Nebenkosten</td><td>800 €</td><td>9.600 €</td></tr>
+            <tr><td>Marketing</td><td>400 €</td><td>4.800 €</td></tr>
+            <tr><td>Gehalt Gründer (Falls)</td><td>1.800 €</td><td>21.600 €</td></tr>
+            <tr class="highlight"><td><strong>Summe Fixkosten</strong></td><td><strong>3.000 €</strong></td><td><strong>36.000 €</strong></td></tr>
+          </tbody>
+        </table>
+
+        <p class="muted">Nutze diese Struktur als Grundlage; passe Zahlen an deine Branche an. Ich kann dir beim Ausfüllen helfen — Kontaktformular unten.</p>
+      </article>
+    </section>
+
+    <!-- RECHTSFORMEN -->
+    <section id="rechtsformen" class="card">
+      <header class="section-head">
+        <h2>Rechtsformen</h2>
+        <p class="muted">Haftung, Kapitalbedarf und steuerliche Wirkungen im Vergleich.</p>
+      </header>
+
+      <div class="compare-grid">
+        <div class="compare-item">
+          <h4>Einzelunternehmer / Freiberufler</h4>
+          <p>Einfach zu starten, volle Haftung.</p>
+        </div>
+        <div class="compare-item">
+          <h4>GbR / Personengesellschaft</h4>
+          <p>Mehrere Gründer, einfache Struktur, persönliche Haftung.</p>
+        </div>
+        <div class="compare-item">
+          <h4>GmbH / UG</h4>
+          <p>Haftungsbegrenzung; GmbH: Stammkapital 25.000 €, UG ab 1 €.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOERDERUNG -->
+    <section id="foerderung" class="card">
+      <header class="section-head">
+        <h2>Förderung & Beratung</h2>
+      </header>
+      <p>Überblick über Programme & Stellen:</p>
+      <ul>
+        <li>Agentur für Arbeit: Gründerzuschuss (bei Bezug von ALG I)</li>
+        <li>KfW Programme: ERP Gründerkredit & Mikrofinanzierung</li>
+        <li>BAFA: Zuschüsse für Beratungsleistungen (teilweise)</li>
+        <li>Regionale Wirtschaftsförderung & EXIST für Hochschulgründer</li>
+      </ul>
+      <p class="muted">Tipp: Bereite einen kurzen Projektsteckbrief (1 Seite) für Förderanträge vor — das beschleunigt Prüfprozesse.</p>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="card">
+      <h2>Bildgalerie / Inspiration</h2>
+      <div class="gallery" aria-hidden="false">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=60&auto=format&fit=crop" alt="Arbeitsplatz 1" data-full="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1600&q=80&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=60&auto=format&fit=crop" alt="Coworking" data-full="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&q=80&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=60&auto=format&fit=crop" alt="Meeting" data-full="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1600&q=80&auto=format&fit=crop">
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="kontakt" class="card contact-card">
+      <h2>Kontakt & Angebot</h2>
+      <p>Ich kann dir ein Start-Sheet (Businessplan-Kern + 12-Monate Finanzplanung) erstellen oder die Website individuell anpassen.</p>
+
+      <form id="contactForm" class="contact-form" action="#" method="post" onsubmit="return false;">
+        <div class="row">
+          <label for="name">Name</label>
+          <input id="name" name="name" required placeholder="Vorname Nachname" />
+        </div>
+        <div class="row">
+          <label for="email">E-Mail</label>
+          <input id="email" name="email" type="email" required placeholder="mail@example.de" />
+        </div>
+        <div class="row">
+          <label for="desc">Kurz beschreiben</label>
+          <textarea id="desc" name="desc" rows="4" placeholder="z. B. Branche, gewünschte Unterstützung"></textarea>
+        </div>
+        <div class="row actions">
+          <button class="btn primary" id="sendContact">Anfrage senden</button>
+          <button class="btn ghost" type="reset">Zurücksetzen</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="wrap">
+      <p>© <span id="year"></span> Weg in die Selbstständigkeit — Informationsportal</p>
+      <p class="muted small">Hinweis: Diese Seite ersetzt keine Steuer- oder Rechtsberatung. Für verbindliche Entscheidungen wende dich an Steuerberater oder Anwalt.</p>
+    </div>
+  </footer>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Bildvorschau">
+    <button class="lightbox-close" aria-label="Schließen">✕</button>
+    <img src="" alt="">
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

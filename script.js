@@ -1,16 +1,12 @@
-form.addEventListener("submit", function(e) {
-    e.preventDefault();
-    alert("Vielen Dank! Ihre Nachricht wurde gesendet.");
-    form.reset();
+// Dark Mode
+const toggle = document.getElementById("darkToggle");
+toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
 });
 
-// Smooth scrolling for navigation links
-const navLinks = document.querySelectorAll('nav ul li a');
-navLinks.forEach(link => {
-    link.addEventListener('click', function(e) {
-        e.preventDefault();
-        const targetId = link.getAttribute('href').substring(1);
-        const target = document.getElementById(targetId);
-        target.scrollIntoView({ behavior: 'smooth' });
+// Accordion
+document.querySelectorAll(".acc-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+        btn.parentElement.classList.toggle("active");
     });
 });

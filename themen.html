@@ -2,118 +2,90 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Themen der Selbstständigkeit – Marc Meinel</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Themen – Selbstständigkeit</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
 </head>
 
 <body>
-<header class="header">
-    <div class="logo">Marc <span>Meinel</span></div>
 
-    <nav class="nav">
-        <a href="index.html">Start</a>
-        <a href="themen.html" class="active">Themen</a>
-        <a href="leistungen.html">Leistungen</a>
-        <a href="kontakt.php">Kontakt</a>
+<header>
+    <nav class="navbar">
+        <div class="logo">Selbstständig Starten</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Start</a></li>
+            <li><a class="active" href="themen.html">Themen</a></li>
+            <li><a href="leistungen.html">Leistungen</a></li>
+            <li><a href="kontakt.php">Kontakt</a></li>
+        </ul>
+        <button id="toggleDark">🌙</button>
     </nav>
-
-    <button id="darkToggle" class="dark-btn">☾</button>
 </header>
 
-<section class="section">
-    <h1>Themen der Selbstständigkeit</h1>
-    <p>Alle wichtigen Schritte auf dem Weg in die berufliche Unabhängigkeit.</p>
-
-    <div class="accordion">
-
-        <!-- 1 -->
-        <div class="acc-item">
-            <button class="acc-btn">
-                <img src="DATAURI_ICON6" class="icon">Formaler Weg in die Selbstständigkeit
-            </button>
-            <div class="acc-content">
-                <p>• Gewerbeanmeldung beim Gewerbeamt (ca. 20–50 €)<br>
-                • Steuernummer durch den Fragebogen zur steuerlichen Erfassung<br>
-                • Anmeldung bei Berufsgenossenschaft<br>
-                • Eintrag bei IHK oder Handwerkskammer<br>
-                • Branchenabhängige Genehmigungen</p>
-            </div>
-        </div>
-
-        <!-- 2 -->
-        <div class="acc-item">
-            <button class="acc-btn">
-                <img src="DATAURI_ICON4" class="icon">Sozialversicherungen & Selbstständigkeit
-            </button>
-            <div class="acc-content">
-                <p>• Krankenversicherung (GKV oder PKV)<br>
-                • Rentenversicherungspflicht in manchen Berufen<br>
-                • Freiwillige Arbeitslosenversicherung<br>
-                • Unfallversicherung über Berufsgenossenschaft</p>
-            </div>
-        </div>
-
-        <!-- 3 -->
-        <div class="acc-item">
-            <button class="acc-btn">
-                <img src="DATAURI_ICON3" class="icon">Steuern & Selbstständigkeit
-            </button>
-            <div class="acc-content">
-                <p>• Einkommensteuer<br>
-                • Umsatzsteuer (19 %, 7 % oder Kleinunternehmer)<br>
-                • Gewerbesteuer für Gewerbetreibende</p>
-            </div>
-        </div>
-
-        <!-- 4 -->
-        <div class="acc-item">
-            <button class="acc-btn">
-                <img src="DATAURI_ICON5" class="icon">Businessplan erstellen
-            </button>
-            <div class="acc-content">
-                <p>• Geschäftsidee & Zielgruppe<br>
-                • Marktanalyse & Wettbewerber<br>
-                • Finanzplan, Liquidität, Break-even<br>
-                • Marketing & Vertrieb<br>
-                • Organisation & Personal</p>
-            </div>
-        </div>
-
-        <!-- 5 -->
-        <div class="acc-item">
-            <button class="acc-btn">
-                <img src="DATAURI_ICON11" class="icon">Rechtsformen
-            </button>
-            <div class="acc-content">
-                <p>• Einzelunternehmen<br>
-                • GbR<br>
-                • UG (haftungsbeschränkt)<br>
-                • GmbH<br>
-                • AG</p>
-            </div>
-        </div>
-
-        <!-- 6 -->
-        <div class="acc-item">
-            <button class="acc-btn">
-                <img src="DATAURI_ICON20" class="icon">Hilfe, Unterstützung & Fördermittel
-            </button>
-            <div class="acc-content">
-                <p>• Gründungszuschuss der Agentur für Arbeit<br>
-                • KfW-Förderkredite<br>
-                • Landesprogramme<br>
-                • Existenzgründungsberatung<br>
-                • Networking & Coworking</p>
-            </div>
-        </div>
-
-    </div>
+<section class="page-header">
+    <h1>Themen & Grundlagen der Selbstständigkeit</h1>
 </section>
 
-<footer class="footer">
-    <p>© 2025 Marc Meinel – Existenzgründungsberatung</p>
+<section class="topic-section">
+
+    <div class="topic">
+        <img src="ICON6">
+        <h2>1. Formale Wege in die Selbstständigkeit</h2>
+        <p>
+            Gewerbeanmeldung, Steuernummer, Anmeldung bei BG, IHK / HWK,
+            Genehmigungen & Anforderungen je nach Branche.
+        </p>
+    </div>
+
+    <div class="topic">
+        <img src="ICON4">
+        <h2>2. Sozialversicherungen</h2>
+        <p>
+            Krankenversicherung (GKV/PKV), Rentenversicherungspflichten,
+            freiwillige Arbeitslosenversicherung, Unfallversicherung.
+        </p>
+    </div>
+
+    <div class="topic">
+        <img src="ICON3">
+        <h2>3. Steuern & Abgaben</h2>
+        <p>
+            Einkommensteuer, Umsatzsteuer, Kleinunternehmerregelung, Gewerbesteuer.
+        </p>
+    </div>
+
+    <div class="topic">
+        <img src="ICON5">
+        <h2>4. Der Businessplan</h2>
+        <p>
+            Geschäftsidee, Marktanalyse, Finanzplanung, Marketingstrategie,
+            Organisation & Struktur.
+        </p>
+    </div>
+
+    <div class="topic">
+        <img src="ICON2">
+        <h2>5. Rechtsformen</h2>
+        <p>
+            Einzelunternehmen, GbR, GmbH, UG, AG – Unterschiede, Haftung, Kapital.
+        </p>
+    </div>
+
+    <div class="topic">
+        <img src="ICON20">
+        <h2>6. Förderung & Unterstützung</h2>
+        <p>
+            Gründungszuschuss, KfW-Förderung, Landesprogramme, Coaching & Beratung.
+        </p>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2025 – Marc Meinel Coaching</p>
 </footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
